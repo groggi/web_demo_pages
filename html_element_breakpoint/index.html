@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Test Page</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script>
+		$(document).on('click', '#add_element_button', function(){
+			add_element();
+		});
+		
+		function add_element() {
+			$('#elements_parent').append("<p>Something fancy happened and resulted in this new element!</p>");
+		}
+	</script>
+</head>
+
+<body>
+<p>
+	<button type="button" id="add_element_button">Add element!</button>
+</p>
+<div id="elements_parent" style="border:1px solid #000000;"></div>
+</body>
+
+</html>
+
